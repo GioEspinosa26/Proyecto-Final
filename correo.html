@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form id="form">
+      <div class="field">
+        <label for="from_name">Escribe tu nombre:</label>
+        <input type="text" name="from_name" id="from_name" />
+      </div>
+      <div class="field">
+        <label for="to_name">Escribe tus apellidos:</label>
+        <input type="text" name="to_name" id="to_name" />
+      </div>
+      <div class="field">
+        <label for="reply_to">Escribe tu numero de telefono:</label>
+        <input type="text" name="reply_to" id="reply_to" />
+      </div>
+
+      <input type="submit" id="button" value="Send Email" />
+    </form>
+
+    <script type="text/javascript" src="./javascript.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("EssTsJZmcB1g_5YF0");
+    </script>
+
+    <script></script>
+  </body>
+</html>
